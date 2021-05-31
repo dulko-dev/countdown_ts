@@ -1,5 +1,5 @@
 <h1 align='center'>Euro 2020 countdown</h1>
-<p align='center'><img src='https://github.com/dulko-dev/euro2020_countdown_ts/blob/master/style/euro2020.png' alt='timer' title='euro2020 countdown' /></p>
+<p align='center'><img src='https://github.com/dulko-dev/euro2020_countdown_ts/blob/master/Countdown%20Timer.png' alt='timer' title='euro2020 countdown' /></p>
 
 ## Table of Contents
 - [Introduction](#introduction)
