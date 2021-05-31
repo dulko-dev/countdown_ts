@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  min-height: inherit;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing {
+  text-align: center;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  font-size: 7em;
+}
+
+.typing::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  border: 1px solid black;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: wink 0.5s infinite linear;
+}
+
+.time__container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 300px;
+  font-size: 3em;
+}
+
+.time__info {
+  font-weight: bold;
+}
+
+.time__info + div {
+  text-align: center;
+}
+
+@keyframes wink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
