@@ -11,8 +11,25 @@ body {
 }
 
 section {
+  position: relative;
   min-height: 100vh;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section::after {
+  content: "";
+  background-image: url("../style/euro2020.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .container {
@@ -23,41 +40,45 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: rgb(83, 2, 2);
 }
 
 .typing {
   text-align: center;
   position: relative;
-  height: 20px;
-  line-height: 20px;
-  font-size: 7em;
+  height: 200px;
+  font-size: 5em;
 }
 
 .typing::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 20px;
-  border: 1px solid black;
-  top: 50%;
-  transform: translateY(-50%);
-  animation: wink 0.5s infinite linear;
+  width: 5px;
+  height: 80px;
+  background-color: rgb(90, 86, 86);
+  animation: wink 0.2s infinite ease;
 }
 
 .time__container {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding-top: 300px;
+  padding-top: 200px;
   font-size: 3em;
 }
 
 .time__info {
-  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .time__info + div {
+  font-weight: bold;
   text-align: center;
+  font-size: 2.2em;
+}
+
+.second {
+  animation: second 1s linear infinite;
 }
 
 @keyframes wink {
@@ -66,5 +87,14 @@ section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes second {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }

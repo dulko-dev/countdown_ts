@@ -1,5 +1,9 @@
 "use strict";
-const texts = ["hello", "investigation", "fascination"];
+const texts = [
+    "Countdown to open Euro 2021!",
+    "Poland plays first game against Slovakia - 14th June at 6pm.",
+    "The Winner takes it all!",
+];
 let word = "";
 let characters = "";
 let spellWord = 0;
@@ -12,13 +16,15 @@ let count = 0;
     characters = word.slice(0, spellWord++);
     document.querySelector(".typing").textContent = characters;
     if (characters.length === word.length) {
-        count++;
-        spellWord = 0;
+        setTimeout(() => {
+            count++;
+            spellWord = 0;
+        }, 1000);
     }
-    setTimeout(type, 400);
+    setTimeout(type, 300);
 })();
 const timeStamp = () => {
-    const futureDate = new Date("June 1, 2021 00:00:00").getTime();
+    const futureDate = new Date("June 11, 2021 21:00:00").getTime();
     const nowDate = new Date().getTime();
     const distanceDate = futureDate - nowDate;
     let seconds = 1000;

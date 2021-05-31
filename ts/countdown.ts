@@ -1,6 +1,10 @@
 // title
 
-const texts: string[] = ["hello", "investigation", "fascination"];
+const texts: string[] = [
+  "Countdown to open Euro 2021!",
+  "Poland plays first game against Slovakia - 14th June at 6pm.",
+  "The Winner takes it all!",
+];
 let word: string = "";
 let characters: string = "";
 let spellWord: number = 0;
@@ -14,16 +18,18 @@ let count: number = 0;
   characters = word.slice(0, spellWord++);
   document.querySelector(".typing")!.textContent = characters;
   if (characters.length === word.length) {
-    count++;
-    spellWord = 0;
+    setTimeout(() => {
+      count++;
+      spellWord = 0;
+    }, 1000);
   }
-  setTimeout(type, 400);
+  setTimeout(type, 300);
 })();
 
-// time
+// timer
 
 const timeStamp = () => {
-  const futureDate: number = new Date("June 1, 2021 00:00:00").getTime();
+  const futureDate: number = new Date("June 11, 2021 21:00:00").getTime();
   const nowDate: number = new Date().getTime();
   const distanceDate: number = futureDate - nowDate;
 
