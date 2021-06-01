@@ -1,7 +1,7 @@
 // title
 
 const texts: string[] = [
-  "Countdown to open Euro 2021!",
+  "Countdown to open Euro 2020!",
   "Poland plays first game against Slovakia - 14th June at 6pm.",
   "The Winner takes it all!",
 ];
