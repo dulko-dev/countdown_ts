@@ -7,6 +7,9 @@
 - [Build Process](#build-process)
 - [License](#license)
 
+<h2>Demo</h2>
+<p>Here is a working live demo - <a target='_blanket' href='https://dulko-euro2020-countdown.vercel.app/' <p>Mini Games</p> </a></p>
+
 ## Introduction
   <p>Simple and quick countdown timer which count time to start Euro 2020</p>
   
