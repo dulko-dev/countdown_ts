@@ -1,8 +1,8 @@
 // title
 
 const texts: string[] = [
-  "Countdown to open Euro 2020!",
-  "Poland plays first game against Slovakia - 14th June at 6pm.",
+  "Countdown to opening Poland match on Euro 2020!",
+  "Matches are take place in 11th countries",
   "The Winner takes it all!",
 ];
 let word: string = "";
@@ -21,7 +21,7 @@ let count: number = 0;
     setTimeout(() => {
       count++;
       spellWord = 0;
-    }, 1000);
+    }, 2000);
   }
   setTimeout(type, 300);
 })();
@@ -29,7 +29,7 @@ let count: number = 0;
 // timer
 
 const timeStamp = () => {
-  const futureDate: number = new Date("June 11, 2021 21:00:00").getTime();
+  const futureDate: number = new Date("June 14, 2021 18:00:00").getTime();
   const nowDate: number = new Date().getTime();
   const distanceDate: number = futureDate - nowDate;
 
